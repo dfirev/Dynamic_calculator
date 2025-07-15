@@ -3,8 +3,9 @@ function dis(n){
     document.getElementById("result").value+=n
 }
 function clr(){
-    document.getElementById("result").value = 0
+    document.getElementById("result").value = ""
 }
 function solve(){
-
+    let x = document.getElementById("result").value;
+    document.getElementById("result").value = eval(x);
 }
